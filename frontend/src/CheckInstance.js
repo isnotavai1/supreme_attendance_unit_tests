@@ -4,7 +4,7 @@ function CheckInstance() {
   const [teacherId , setTeacherId] = useState("no_id");
   const [displayRes , setDisplayRes] = useState([]);
   const FindIt = (teacherId) => {
-    Axios.get(`http://192.168.8.229:8080/CheckInstance/${teacherId}`).then((res)=>{
+    Axios.get(`http://ipaddress:8080/CheckInstance/${teacherId}`).then((res)=>{
         console.log(res.data)
         setDisplayRes(res.data);
     }).catch((err)=>{
