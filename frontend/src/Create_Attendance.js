@@ -11,7 +11,7 @@ function Create_Attendance() {
   })
   const generateClass = ()=>{
     console.log(user)
-    Axios.post("http://192.168.8.229:8080/addClassInstance",user).then((res)=>{
+    Axios.post("http://ipaddress:8080/addClassInstance",user).then((res)=>{
         console.log(res);
     }).catch((err)=>{
       console.log(err);
