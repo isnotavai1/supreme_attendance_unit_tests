@@ -21,7 +21,7 @@ function Give_attendance() {
   const AddStudent =  (img)=>{
     console.log("posting...")
     console.log(img)
-    Axios.post("http://192.168.8.229:8080/addStudentToInstance" , 
+    Axios.post("http://ipaddress:8080/addStudentToInstance" , 
       {...userdets , image : img} 
     ).then((res)=>{
       console.log(res);
